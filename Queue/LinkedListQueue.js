@@ -16,8 +16,8 @@ class LinkedListQueue {
   enQueue(value) {
     let node = new Node(value);
     if (this.isFull()) {
-        console.log("Overflow!, queue is full");
-        return this
+      console.log("Overflow!, queue is full");
+      return this;
     }
     if (this.isEmpty()) {
       this.front = node;
@@ -32,8 +32,8 @@ class LinkedListQueue {
 
   deQueue() {
     if (this.isEmpty()) {
-        console.log("Underflow!, queue is empty");
-        return this
+      console.log("Underflow!, queue is empty");
+      return this;
     }
     this.front = this.front.next;
     this.length--;
